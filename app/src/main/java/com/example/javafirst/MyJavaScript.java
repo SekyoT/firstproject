@@ -2,13 +2,14 @@ package com.example.javafirst;
 
 import android.renderscript.ScriptGroup;
 
+import java.lang.reflect.TypeVariable;
 import java.util.Scanner;
 
 public class MyJavaScript
 {
     public static void main(String[] args)
     {
-
+        /*
         String name = "John";
         String price1 = "12.90";
         double price2 = 12.90;
@@ -43,17 +44,9 @@ public class MyJavaScript
         System.out.println("The Grade of Chemistry is " + Grade);
         System.out.println("It is " + rainStopped + " that the rain has stopped");
 
+         */
 
-
-
-
-
-
-
-
-
-
-
+        //Question 1
         /*
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the first number: ");
@@ -78,42 +71,41 @@ public class MyJavaScript
 
          */
 
-
-
+        //Question 2
+        /*
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter lower limit ");
+        System.out.print("Enter lower limit: ");
         int lowerNumber = sc.nextInt();
-        System.out.print("Enter upper limit ");
+        lowerNumber++;
+
+        System.out.print("Enter upper limit: ");
         int upperNumber = sc.nextInt();
 
-        if (lowerNumber < upperNumber)
+        if(lowerNumber < upperNumber)
         {
-            System.out.print("Counting:");
-            for (lowerNumber = upperNumber; lowerNumber < upperNumber; lowerNumber++)
-            {
-                System.out.print(" " + lowerNumber);
-            }
+            System.out.print("Counting ");
 
+            for (int i = lowerNumber; i < upperNumber; i++)
+            {
+                System.out.print(" " + i);
+            }
         }
         else
         {
-            System.out.println("upper limit is higher than lower limit");
+            System.out.println("Upoper limit is bigger than the lower limit");
         }
+        */
 
+        //Question 3
+        int[] myNumbers = {55,24,65,41,13,22,76,90};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        for (int i = 0; i < myNumbers.length; i++)
+        {
+            if(i >= 55)
+            {
+                System.out.println(myNumbers);
+            }
+        }
 
 
 
